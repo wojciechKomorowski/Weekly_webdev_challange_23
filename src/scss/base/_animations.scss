@@ -1,0 +1,17 @@
+@keyframes border_fadein {
+    0% { 
+        border-top: 6px solid transparent;
+    }
+    100% { 
+        border-top: 6px solid $main-color;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

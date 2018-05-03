@@ -1,0 +1,29 @@
+.root__about {
+    background-color: $about-color;
+    color: $secondary-color;
+}
+
+.about__overall, .about__precise {
+    width: 45%;
+    line-height: 1.5;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.overall__greeting {
+    @extend %font-greeting;
+}
+
+.overall__title {
+    @extend %font-title;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.overall__button {
+    @include button($about-button-color);
+    margin-top: 15%;
+    &:hover {
+        @include button-hover($about-button-color);
+    }
+}

@@ -7,9 +7,92 @@
   <title>Weekly webdev challange 23</title>
   <link rel="stylesheet" href="home.bundle.css">
 </head>
-<body>
-  <h1>Webpack config</h1>
-  <h2>hfhhfffws</h2>
+<body class="root">
+
+  <nav class="box root__navbar">
+    <a class="navbar__logo" href="#"><span class="color--main">!st</span> Agency</a>
+    <ul class="navbar__menu">
+      <li class="menu__item menu__item--active"><a href="#home">Home</a></li>
+      <li class="menu__item"><a href="#aboutus">About Us</a></li>
+      <li class="menu__item"><a href="#services">Services</a></li>
+      <li class="menu__item"><a href="#profile">Profile</a></li>
+      <li class="menu__item"><a href="#clients">Clients</a></li>
+      <li class="menu__item"><a href="#blog">Blog</a></li>
+      <li class="menu__item"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="root__header" id="home">
+    <div class="box background--darken">
+      <article class="header__welcome">
+        <p class="welcome__greeting">Hello</p>
+        <h1 class="welcome__title">My Name is <span class="color--main">John Doe</span></h1>
+        <h2 class="welcome__position">Ceo | !st Agency</h2>
+        <p class="welcome__text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aut perspiciatis in non impedit nobis recusandae quisquam eum excepturi ea voluptates mollitia magni odio deserunt aspernatur voluptatem enim, consequatur ut. Veritatis neque, qui, facere, repellendus nostrum in tempora molestiae voluptates pariatur provident officia magnam! Dolore ipsam ab sequi et. Rerum, ad eveniet.
+        </p>
+        <button class="welcome__button">Click here</button>
+      </article>
+      <div class="header__image"></div>
+    </div>
+  </header> 
+  
+  <section class="box root__about" id="aboutus">
+    <article class="about__overall">
+      <p class="overall__greeting">Who we are</p>
+      <h3 class="overall__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+      <p class="overall__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci est distinctio quibusdam temporibus praesentium sed quae doloremque!
+      </p>
+      <button class="overall__button">Click here</button>
+    </article>
+    <article class="about__precise">
+      <p class="precise__text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum dolorum tenetur officia dolore reprehenderit. Accusantium quidem quis nobis. Recusandae odit dignissimos libero cumque voluptatem maxime voluptate nihil officia obcaecati sunt.
+      </p>
+    </article>
+  </section>
+  
+  <section class="box root__services" id="services">
+    <p class="services__greeting">Services</p>
+    <h3 class="services__title">What I Do...</h3>
+    <div class="services__offer">
+      <article class="offer__competence">
+        <div class="competence__skill">
+          <div class="skill__icon"></div>
+          <h4 class="skill__title">Lorem ipsum dolor sit amet</h4>
+        </div>
+        <div class="competence__text">
+          <p>
+             Consectetur adipisicing elit. Excepturi adipisci magnam animi ut porro veritatis consequatur repudiandae, asperiores, a consequuntur itaque sint consectetur unde dignissimos. Excepturi ad placeat amet id!
+          </p>
+        </div>
+      </article>
+      <article class="offer__competence">
+          <div class="competence__skill">
+              <div class="skill__icon"></div>
+              <h4 class="skill__title">Lorem ipsum dolor sit amet</h4>
+            </div>
+            <div class="competence__text">
+              <p>
+                 Consectetur adipisicing elit. Excepturi adipisci magnam animi ut porro veritatis consequatur repudiandae, asperiores, a consequuntur itaque sint consectetur unde dignissimos. Excepturi ad placeat amet id!
+              </p>
+            </div>
+      </article>
+      <article class="offer__competence">
+          <div class="competence__skill">
+              <div class="skill__icon"></div>
+              <h4 class="skill__title">Lorem ipsum dolor sit amet</h4>
+            </div>
+            <div class="competence__text">
+              <p>
+                 Consectetur adipisicing elit. Excepturi adipisci magnam animi ut porro veritatis consequatur repudiandae, asperiores, a consequuntur itaque sint consectetur unde dignissimos. Excepturi ad placeat amet id!
+              </p>
+            </div>
+      </article>
+    </div>
+  </section>
+
   <script src="home.bundle.js"></script>
 </body>
 </html>

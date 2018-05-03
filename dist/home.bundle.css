@@ -1,4 +1,185 @@
-body {
-    background: red;
-}body {
-  color: orange; }
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700,900);@import url(https://fonts.googleapis.com/css?family=Leckerli+One);* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.box, .root__navbar, .navbar__menu, .services__offer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.root__services {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.root__navbar a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none; }
+
+.navbar__logo, .welcome__title, .overall__title, .services__title {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900; }
+
+.welcome__greeting, .overall__greeting, .services__greeting {
+  font-family: Leckerli One,cursive;
+  font-size: 2rem; }
+
+.background--darken {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.box {
+  padding-left: 15%;
+  padding-right: 15%; }
+
+.color--main {
+  color: rgba(0, 129, 255, 0.9); }
+
+@keyframes border_fadein {
+  0% {
+    border-top: 6px solid transparent; }
+  100% {
+    border-top: 6px solid rgba(0, 129, 255, 0.9); } }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.root {
+  font-family: 'Lato', sans-serif;
+  background: rgba(255, 255, 255, 0.9); }
+
+button:focus {
+  outline: none; }
+
+.root__navbar {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 100; }
+
+.navbar__menu {
+  list-style-type: none; }
+
+.menu__item {
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 10;
+  border-top: 6px solid transparent;
+  margin: 0 1rem; }
+  .menu__item a:hover {
+    color: rgba(0, 129, 255, 0.9); }
+
+.menu__item--active {
+  border-top: 6px solid rgba(0, 129, 255, 0.9);
+  animation-name: border_fadein;
+  animation-duration: 0.5s;
+  animation-timing-function: linear; }
+
+.root__header {
+  background-image: url("/images/header_bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; }
+
+.header__image {
+  width: 500px;
+  height: 700px;
+  background-image: url("/images/header_man.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 22.5%;
+  right: 10%; }
+
+.header__welcome {
+  width: 50%;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 20%;
+  margin-bottom: 10%; }
+
+.welcome__title {
+  font-size: 2.5rem;
+  padding: 1rem 0; }
+
+.welcome__position {
+  font-size: 2rem; }
+
+.welcome__text {
+  line-height: 1.5;
+  padding: 4rem 0; }
+
+.welcome__button {
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #00aeed;
+  border: 0;
+  border-radius: 1.5rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  margin-left: 10%; }
+  .welcome__button:hover {
+    background-color: #006387; }
+
+.root__about {
+  background-color: #0081ff;
+  color: rgba(255, 255, 255, 0.9); }
+
+.about__overall, .about__precise {
+  width: 45%;
+  line-height: 1.5;
+  margin-top: 10%;
+  margin-bottom: 10%; }
+
+.overall__title {
+  margin-top: 5%;
+  margin-bottom: 5%; }
+
+.overall__button {
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #3b4374;
+  border: 0;
+  border-radius: 1.5rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  margin-top: 15%; }
+  .overall__button:hover {
+    background-color: #191c30; }
+
+.root__services {
+  background-color: rgba(0, 129, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9); }
+
+.services__greeting {
+  margin-top: 10%; }
+
+.services__offer {
+  margin-top: 5%;
+  margin-bottom: 10%; }
+
+.skill__title {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-bottom: 5%; }
+
+.skill__icon {
+  width: 50px;
+  height: 50px;
+  background-image: url("/images/services_icon1.svg");
+  background-size: contain; }

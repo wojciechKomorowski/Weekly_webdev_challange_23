@@ -1,0 +1,54 @@
+.root__header {
+    background-image: url('/images/header_bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+.header__image {
+    width: 500px;
+    height: 700px;
+    background-image: url('/images/header_man.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 22.5%;
+    right: 10%;
+}
+
+.header__welcome {
+    width: 50%;
+    color: $secondary-color;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+.welcome__greeting {
+    @extend %font-greeting;
+}
+
+.welcome__title {
+    @extend %font-title;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.welcome__position {
+    font-size: 2rem;
+}
+
+.welcome__text {
+    line-height: 1.5;
+    padding: 4rem 0;
+}
+
+.welcome__button {
+    @include button($calltoaction-color);
+    margin-left: 10%;
+    &:hover {
+        @include button-hover($calltoaction-color);
+    }
+}
+
+

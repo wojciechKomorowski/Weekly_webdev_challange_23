@@ -1,0 +1,28 @@
+%flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%anchor-basic {
+    color: $secondary-color;
+    text-decoration: none;
+}
+
+%font-title {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+%font-greeting {
+    font-family: Leckerli One,cursive;
+    font-size: 2rem;
+}

@@ -1,0 +1,21 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Leckerli+One');
+
+// Base elements
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/extends';
+@import 'base/mixins';
+@import 'base/modifiers';
+@import 'base/animations';
+@import 'base/root';
+
+// Components
+@import 'components/navbar';
+@import 'components/header';
+@import 'components/about';
+@import 'components/services';
+
+

@@ -1,0 +1,41 @@
+.root__navbar {
+    width: 100%;
+    @extend %flex-between-center;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    z-index: 100;
+    a {
+        @extend %anchor-basic;
+    }
+}
+
+.navbar__logo {
+    @extend %font-title;
+}
+
+.navbar__menu {
+    @extend %flex-between-center;
+    list-style-type: none;
+}
+
+.menu__item {
+    font-size: 0.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 10;
+    border-top: 6px solid transparent;
+    margin: 0 1rem;
+    a {
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
+
+.menu__item--active {
+    border-top: 6px solid $main-color;
+    animation-name: border_fadein;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+

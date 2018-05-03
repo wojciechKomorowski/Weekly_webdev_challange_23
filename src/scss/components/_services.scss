@@ -1,0 +1,33 @@
+.root__services {
+    @extend %flex-column;
+    background-color: $main-color;
+    color: $secondary-color;
+}
+
+.services__greeting {
+    @extend %font-greeting;
+    margin-top: 10%;
+}
+
+.services__title {
+    @extend %font-title;
+}
+
+.services__offer {
+    @extend %flex-between-center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.skill__title {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+}
+
+.skill__icon {
+    width: 50px;
+    height: 50px;
+    background-image: url("/images/services_icon1.svg");
+    background-size: contain;
+}

@@ -1,0 +1,13 @@
+.background--darken {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.box {
+    @extend %flex-between-center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.color--main {
+    color: $main-color;
+}
