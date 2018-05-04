@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+
+  // Lightbox
+  var myLightbox = GLightbox({
+    'selector': 'glightbox',
+  });
   
 });
 

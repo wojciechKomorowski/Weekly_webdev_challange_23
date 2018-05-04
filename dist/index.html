@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Weekly webdev challange 23</title>
+  <link rel="stylesheet" href="glightbox.min.css">
   <link rel="stylesheet" href="home.bundle.css">
 </head>
 <body class="root">
@@ -59,7 +60,7 @@
     <div class="services__offer">
       <article class="offer__competence">
         <div class="competence__skill">
-          <div class="skill__icon"></div>
+          <img src="./images/icons/services_icon1.svg" class="skill__icon" />
           <h4 class="skill__title">Lorem ipsum dolor sit amet</h4>
         </div>
         <div class="competence__text">
@@ -70,29 +71,61 @@
       </article>
       <article class="offer__competence">
           <div class="competence__skill">
-              <div class="skill__icon"></div>
-              <h4 class="skill__title">Lorem ipsum dolor sit amet</h4>
-            </div>
-            <div class="competence__text">
-              <p>
-                 Consectetur adipisicing elit. Excepturi adipisci magnam animi ut porro veritatis consequatur repudiandae, asperiores, a consequuntur itaque sint consectetur unde dignissimos. Excepturi ad placeat amet id!
-              </p>
-            </div>
+            <img src="./images/icons/services_icon2.svg" class="skill__icon" />
+            <h4 class="skill__title">Lorem ipsum dolor sit amet</h4>
+          </div>
+          <div class="competence__text">
+            <p>
+                Consectetur adipisicing elit. Excepturi adipisci magnam animi ut porro veritatis consequatur repudiandae, asperiores, a consequuntur itaque sint consectetur unde dignissimos. Excepturi ad placeat amet id!
+            </p>
+          </div>
       </article>
       <article class="offer__competence">
           <div class="competence__skill">
-              <div class="skill__icon"></div>
-              <h4 class="skill__title">Lorem ipsum dolor sit amet</h4>
-            </div>
-            <div class="competence__text">
-              <p>
-                 Consectetur adipisicing elit. Excepturi adipisci magnam animi ut porro veritatis consequatur repudiandae, asperiores, a consequuntur itaque sint consectetur unde dignissimos. Excepturi ad placeat amet id!
-              </p>
-            </div>
+            <img src="./images/icons/services_icon3.svg" class="skill__icon" />
+            <h4 class="skill__title">Lorem ipsum dolor sit amet</h4>
+          </div>
+          <div class="competence__text">
+            <p>
+                Consectetur adipisicing elit. Excepturi adipisci magnam animi ut porro veritatis consequatur repudiandae, asperiores, a consequuntur itaque sint consectetur unde dignissimos. Excepturi ad placeat amet id!
+            </p>
+          </div>
       </article>
     </div>
   </section>
 
+  <section class="root__profile" id="profile">
+      <p class="profile__greeting">Profile</p>
+      <h3 class="profile__title">I Make Beautiful Things</h3>
+      <div class="grid profile__gallery">
+        <a class="gallery__item gallery__item1 glightbox" href="./images/gallery_item1.png">
+          <img class="item__image"src="./images/gallery_item1.png" alt="tickets" />
+          <div class="hover--darken"></div>
+        </a>
+        <a class="gallery__item gallery__item2 glightbox" href="./images/gallery_item2.png">
+          <img class="item__image"src="./images/gallery_item2.png" alt="curriculum vitae" />
+          <div class="hover--darken"></div>
+        </a>
+        <a class="gallery__item gallery__item3 glightbox" href="./images/gallery_item3.png">
+          <img class="item__image"src="./images/gallery_item3.png" alt="business cards" />
+          <div class="hover--darken"></div>
+        </a>
+        <a class="gallery__item gallery__item4 glightbox" href="./images/gallery_item4.png">
+          <img class="item__image"src="./images/gallery_item4.png" alt="brochures" />
+          <div class="hover--darken"></div>
+        </a>
+        <a class="gallery__item gallery__item5 glightbox" href="./images/gallery_item5.png">
+          <img class="item__image"src="./images/gallery_item5.png" alt="curriculum vitae" />
+          <div class="hover--darken"></div>
+        </a>
+        <a class="gallery__item gallery__item6 glightbox" href="./images/gallery_item6.png">
+          <img class="item__image"src="./images/gallery_item6.png" alt="diploma" />
+          <div class="hover--darken"></div>
+        </a>
+      </div>
+  </section>
+
+  <script src="glightbox.min.js"></script>
   <script src="home.bundle.js"></script>
 </body>
 </html>

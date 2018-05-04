@@ -11,6 +11,9 @@
 
 .navbar__logo {
     @extend %font-title;
+    &:hover {
+        @include font-hover(font-main-fadein);
+    }
 }
 
 .navbar__menu {
@@ -22,19 +25,19 @@
     font-size: 0.75rem;
     font-weight: 900;
     text-transform: uppercase;
-    line-height: 10;
+    line-height: 8;
     border-top: 6px solid transparent;
     margin: 0 1rem;
     a {
         &:hover {
-            color: $main-color;
+            @include font-hover(font-main-fadein);
         }
     }
 }
 
 .menu__item--active {
     border-top: 6px solid $main-color;
-    animation-name: border_fadein;
+    animation-name: border-fadein;
     animation-duration: 0.5s;
     animation-timing-function: linear;
 }

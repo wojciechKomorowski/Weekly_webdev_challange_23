@@ -1,4 +1,5 @@
-@keyframes border_fadein {
+// Navigation border fadein
+@keyframes border-fadein {
     0% { 
         border-top: 6px solid transparent;
     }
@@ -7,11 +8,40 @@
     }
 }
 
-@keyframes fadein {
+// Background fadeins
+@keyframes bg-call-fadein {
     0% {
-        opacity: 0;
+        background-color: $calltoaction-color;
     }
     100% {
-        opacity: 1;
+        background-color: darken($calltoaction-color, 20%);
+    }
+}
+
+@keyframes bg-about-fadein {
+    0% {
+        background-color: $about-button-color;
+    }
+    100% {
+        background-color: darken($about-button-color, 20%);
+    }
+}
+
+@keyframes bg-gallery-fadein {
+    0% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: darken(rgba(0, 0, 0, 0.7), 30%);
+    }
+}
+
+// Font fadeins
+@keyframes font-main-fadein {
+    0% {
+        color: $secondary-color;
+    }
+    100% {
+        color: $main-color;
     }
 }

@@ -1,11 +1,10 @@
 .root__about {
-    background-color: $about-color;
+    background-color: $main-color;
     color: $secondary-color;
 }
 
 .about__overall, .about__precise {
     width: 45%;
-    line-height: 1.5;
     margin-top: 10%;
     margin-bottom: 10%;
 }
@@ -22,8 +21,8 @@
 
 .overall__button {
     @include button($about-button-color);
-    margin-top: 15%;
+    margin-top: 10%;
     &:hover {
-        @include button-hover($about-button-color);
+        @include bg-hover(bg-about-fadein);
     }
 }

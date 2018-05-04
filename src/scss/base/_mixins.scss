@@ -9,6 +9,12 @@
     cursor: pointer;
 }
 
-@mixin button-hover($background-color) {
-    background-color: darken($background-color, 20%);
+@mixin bg-hover($animation-name) {
+    animation: $animation-name 0.5s;
+    animation-fill-mode: forwards; 
+}
+
+@mixin font-hover($animation-name) {
+    animation: $animation-name 0.5s;
+    animation-fill-mode: forwards; 
 }

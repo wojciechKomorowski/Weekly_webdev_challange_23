@@ -1,5 +1,5 @@
 .root__header {
-    background-image: url('/images/header_bg.png');
+    background-image: url('../images/header_bg.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
@@ -8,7 +8,7 @@
 .header__image {
     width: 500px;
     height: 700px;
-    background-image: url('/images/header_man.png');
+    background-image: url('../images/header_man.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -39,15 +39,14 @@
 }
 
 .welcome__text {
-    line-height: 1.5;
-    padding: 4rem 0;
+    padding: 3rem 0;
 }
 
 .welcome__button {
     @include button($calltoaction-color);
     margin-left: 10%;
     &:hover {
-        @include button-hover($calltoaction-color);
+        @include bg-hover(bg-call-fadein);
     }
 }
 
