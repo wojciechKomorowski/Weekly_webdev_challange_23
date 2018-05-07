@@ -43,7 +43,7 @@
   cursor: pointer; }
 
 .hover--darken:hover {
-  animation: bg-gallery-fadein 0.5s;
+  animation: bg-gallery-darken 0.5s;
   animation-fill-mode: forwards; }
 
 .box {
@@ -59,25 +59,25 @@
   100% {
     border-top: 6px solid #0081ff; } }
 
-@keyframes bg-call-fadein {
+@keyframes bg-call-darken {
   0% {
     background-color: #00aeed; }
   100% {
     background-color: #006387; } }
 
-@keyframes bg-about-fadein {
+@keyframes bg-about-darken {
   0% {
     background-color: #3b4374; }
   100% {
     background-color: #191c30; } }
 
-@keyframes bg-gallery-fadein {
+@keyframes bg-gallery-darken {
   0% {
     background-color: transparent; }
   100% {
     background-color: rgba(0, 0, 0, 0.7); } }
 
-@keyframes font-main-fadein {
+@keyframes font-main-darken {
   0% {
     color: rgba(255, 255, 255, 0.9); }
   100% {
@@ -98,7 +98,7 @@ button:focus {
   z-index: 100; }
 
 .navbar__logo:hover {
-  animation: font-main-fadein 0.5s;
+  animation: font-main-darken 0.5s;
   animation-fill-mode: forwards; }
 
 .navbar__menu {
@@ -112,7 +112,7 @@ button:focus {
   border-top: 6px solid transparent;
   margin: 0 1rem; }
   .menu__item a:hover {
-    animation: font-main-fadein 0.5s;
+    animation: font-main-darken 0.5s;
     animation-fill-mode: forwards; }
 
 .menu__item--active {
@@ -165,7 +165,7 @@ button:focus {
   cursor: pointer;
   margin-left: 10%; }
   .welcome__button:hover {
-    animation: bg-call-fadein 0.5s;
+    animation: bg-call-darken 0.5s;
     animation-fill-mode: forwards; }
 
 .root__about {
@@ -192,7 +192,7 @@ button:focus {
   cursor: pointer;
   margin-top: 10%; }
   .overall__button:hover {
-    animation: bg-about-fadein 0.5s;
+    animation: bg-about-darken 0.5s;
     animation-fill-mode: forwards; }
 
 .root__services {
@@ -243,7 +243,9 @@ button:focus {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: 'item1 item1 item4 item5' 'item1 item1 item4 item5' 'item2 item3 item4 item6'; }
+  grid-template-areas: 'item1 item1 item4 item5'
+ 'item1 item1 item4 item5'
+ 'item2 item3 item4 item6'; }
 
 .gallery__item {
   background-repeat: no-repeat;

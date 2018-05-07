@@ -1,4 +1,5 @@
 @mixin button($background-color) {
+    width: 180px;
     font-size: 1rem;
     font-weight: 700;
     color: $secondary-color;
@@ -9,12 +10,7 @@
     cursor: pointer;
 }
 
-@mixin bg-hover($animation-name) {
-    animation: $animation-name 0.5s;
-    animation-fill-mode: forwards; 
-}
-
-@mixin font-hover($animation-name) {
+@mixin hover($animation-name) {
     animation: $animation-name 0.5s;
     animation-fill-mode: forwards; 
 }

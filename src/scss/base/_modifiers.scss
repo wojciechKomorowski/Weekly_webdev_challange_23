@@ -1,5 +1,5 @@
 .background--darken {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .hover--darken{
@@ -9,15 +9,37 @@
 }
 
 .hover--darken:hover {
-    @include bg-hover(bg-gallery-fadein);
+    @include hover(bg-gallery-darken);
 }
 
-.box {
+.box--row {
     @extend %flex-between-center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.box--column {
+    @extend %flex-column;
     padding-left: 15%;
     padding-right: 15%;
 }
 
 .color--main {
     color: $main-color;
+}
+
+.fields--container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+@media (max-width: 730px){
+    .box--row {
+        flex-wrap: wrap;
+    }
+    .box--column, .box--row {
+        padding-left: 5%;
+        padding-right: 5%;
+    }    
 }

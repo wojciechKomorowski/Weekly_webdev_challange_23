@@ -1,3 +1,13 @@
+// Fadein
+@keyframes main-fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
 // Navigation border fadein
 @keyframes border-fadein {
     0% { 
@@ -8,8 +18,30 @@
     }
 }
 
-// Background fadeins
-@keyframes bg-call-fadein {
+@keyframes border-elipse {
+    0% { 
+        background-color: transparent;
+        border-radius: 50%;
+    }
+    100% { 
+        border-radius: 40%;
+        background-color: darken(rgba(0, 0, 0, 0.7), 30%);
+    }
+}
+
+
+// Font fadeins
+@keyframes font-main-darken {
+    0% {
+        color: $secondary-color;
+    }
+    100% {
+        color: $main-color;
+    }
+}
+
+// Darkens
+@keyframes bg-call-darken {
     0% {
         background-color: $calltoaction-color;
     }
@@ -18,7 +50,7 @@
     }
 }
 
-@keyframes bg-about-fadein {
+@keyframes bg-about-darken {
     0% {
         background-color: $about-button-color;
     }
@@ -27,7 +59,7 @@
     }
 }
 
-@keyframes bg-gallery-fadein {
+@keyframes bg-gallery-darken {
     0% {
         background-color: transparent;
     }
@@ -36,12 +68,60 @@
     }
 }
 
-// Font fadeins
-@keyframes font-main-fadein {
+@keyframes bg-gray-darken {
     0% {
-        color: $secondary-color;
+        background-color: lightgray;
     }
     100% {
-        color: $main-color;
+        background-color: darken(darkgrey, 10%);
     }
 }
+
+@keyframes bg-pink-darken {
+    0% {
+        background-color: rgba(233, 29, 98, 1);
+    }
+    100% {
+        background-color: darken(rgba(233, 29, 98, 1), 10%);
+    }
+}
+
+// Lightens
+@keyframes bg-main-lighten {
+    0% {
+        background-color: $main-color;
+    }
+    100% {
+        background-color: lighten($main-color, 10%);
+    }
+}
+
+@keyframes bg-black-lighten {
+    0% {
+        background-color: black;
+    }
+    100% {
+        background-color: lighten(black, 10%);
+    }
+}
+
+@keyframes bg-transparent-black-lighten {
+    0% {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    100% {
+        background-color: lighten(rgba(0, 0, 0, 0.7), 10%);
+    }
+}
+
+@keyframes bg-gray-lighten {
+    0% {
+        background-color: rgba(50, 50, 50, 1);
+    }
+    100% {
+        background-color: $secondary-color;
+    }
+}
+
+
+

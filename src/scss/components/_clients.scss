@@ -1,0 +1,59 @@
+.root__clients {
+    color: $secondary-color;
+    background-image: url('../images/clients_bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+.clients__greeting {
+    @extend %font-greeting;
+    margin-top: 6rem;
+}
+
+.clients__title {
+    @extend %font-title;
+}
+
+.clients__text {
+    max-width: 400px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.clients__brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+
+.brands__item {
+    width: 150px;
+    height: 150px;
+    margin: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    &:hover {
+        @include hover(main-fadeout);
+    }
+}
+
+.brands__item1 {
+    background-image: url('../images/clients_brand1.png');
+}
+
+.brands__item2 {
+    background-image: url('../images/clients_brand2.png');
+}
+
+.brands__item3 {
+    background-image: url('../images/clients_brand3.png');
+}
+
+.brands__item4 {
+    background-image: url('../images/clients_brand4.png');
+}

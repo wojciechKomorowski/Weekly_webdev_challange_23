@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Weekly webdev challange 23</title>
+  <link rel="stylesheet" href="css/fontello.css">
   <link rel="stylesheet" href="glightbox.min.css">
   <link rel="stylesheet" href="home.bundle.css">
 </head>
 <body class="root">
 
-  <nav class="box root__navbar">
+  <nav class="box--row root__navbar">
     <a class="navbar__logo" href="#"><span class="color--main">!st</span> Agency</a>
     <ul class="navbar__menu">
       <li class="menu__item menu__item--active"><a href="#home">Home</a></li>
@@ -24,7 +25,7 @@
   </nav>
 
   <header class="root__header" id="home">
-    <div class="box background--darken">
+    <div class="box--row background--darken">
       <article class="header__welcome">
         <p class="welcome__greeting">Hello</p>
         <h1 class="welcome__title">My Name is <span class="color--main">John Doe</span></h1>
@@ -38,7 +39,7 @@
     </div>
   </header> 
   
-  <section class="box root__about" id="aboutus">
+  <section class="box--row root__about" id="aboutus">
     <article class="about__overall">
       <p class="overall__greeting">Who we are</p>
       <h3 class="overall__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
@@ -54,7 +55,7 @@
     </article>
   </section>
   
-  <section class="box root__services" id="services">
+  <section class="box--row root__services" id="services">
     <p class="services__greeting">Services</p>
     <h3 class="services__title">What I Do...</h3>
     <div class="services__offer">
@@ -97,33 +98,192 @@
   <section class="root__profile" id="profile">
       <p class="profile__greeting">Profile</p>
       <h3 class="profile__title">I Make Beautiful Things</h3>
-      <div class="grid profile__gallery">
+      <div class="grid--profile profile__gallery">
         <a class="gallery__item gallery__item1 glightbox" href="./images/gallery_item1.png">
           <img class="item__image"src="./images/gallery_item1.png" alt="tickets" />
           <div class="hover--darken"></div>
         </a>
         <a class="gallery__item gallery__item2 glightbox" href="./images/gallery_item2.png">
-          <img class="item__image"src="./images/gallery_item2.png" alt="curriculum vitae" />
+          <img class="item__image"src="./images/gallery_item2.png" alt="curriculum vitae">
           <div class="hover--darken"></div>
         </a>
         <a class="gallery__item gallery__item3 glightbox" href="./images/gallery_item3.png">
-          <img class="item__image"src="./images/gallery_item3.png" alt="business cards" />
+          <img class="item__image"src="./images/gallery_item3.png" alt="business cards">
           <div class="hover--darken"></div>
         </a>
         <a class="gallery__item gallery__item4 glightbox" href="./images/gallery_item4.png">
-          <img class="item__image"src="./images/gallery_item4.png" alt="brochures" />
+          <img class="item__image"src="./images/gallery_item4.png" alt="brochures">
           <div class="hover--darken"></div>
         </a>
         <a class="gallery__item gallery__item5 glightbox" href="./images/gallery_item5.png">
-          <img class="item__image"src="./images/gallery_item5.png" alt="curriculum vitae" />
+          <img class="item__image"src="./images/gallery_item5.png" alt="curriculum vitae">
           <div class="hover--darken"></div>
         </a>
         <a class="gallery__item gallery__item6 glightbox" href="./images/gallery_item6.png">
-          <img class="item__image"src="./images/gallery_item6.png" alt="diploma" />
+          <img class="item__image"src="./images/gallery_item6.png" alt="diploma">
           <div class="hover--darken"></div>
         </a>
       </div>
   </section>
+
+  <section class="root__clients" id="clients">
+    <div class="box--column background--darken">
+      <p class="clients__greeting">Clients</p>
+      <h3 class="clients__title">What I do...</h3>
+      <p class="clients__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>    
+      <div class="clients__brands">
+        <div class="brands__item brands__item1"></div>
+        <div class="brands__item brands__item2"></div>
+        <div class="brands__item brands__item3"></div>
+        <div class="brands__item brands__item4"></div>
+      </div>
+    </div>
+  </section> 
+
+  <section class="box--row root__blog" id="blog">
+      <div class="grid--blog blog__posts">
+          <article class="posts__post posts__post1">
+            <p class="post__greeting">Blog</p>
+            <h3 class="post__title">I Write beautiful things</h3>
+            <p class="post__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, voluptatum perferendis quis aliquid sed doloribus qui commodi volup.
+            </p>  
+          </article>
+          <article class="posts__post posts__post2">
+            <p class="post__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, voluptatum perferendis quis aliquid sed doloribus qui commodi volup.
+            </p>
+            <p class="post__date">11 November</p>
+          </article>
+          <article class="posts__post posts__post3">
+            <p class="post__date">11 November</p>
+            <p class="post__title">Lorem ipsum</p>
+          </article>
+          <article class="posts__post posts__post4">
+            <p class="post__date">11 November</p>
+            <p class="post__title">Lorem ipsum</p>
+          </article>
+          <article class="posts__post posts__post5">
+            <div class="background--darken">
+                <p class="post__date">11 November</p>
+                <p class="post__title">Lorem ipsum</p>
+                <p class="post__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, voluptatum perferendis quis aliquid sed doloribus qui commodi volup.
+                </p> 
+            </div>         
+          </article>
+          <article class="posts__post posts__post6">
+              <p class="post__date">11 November</p>
+              <p class="post__title">Lorem ipsum</p>
+              <p class="post__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, voluptatum perferendis quis aliquid sed doloribus qui commodi volup.
+              </p>  
+          </article>
+      </div> 
+  </section> 
+
+  <footer class="root__contact" id="contact">
+    <div class="box--row background--darken">
+      <div class="contact__adress">
+        <p class="adress__greeting">Contact...</p>
+        <h3 class="adress__title">Adress Info</h3>
+        <div class="adress__email">
+          <div class="email__icon"></div>
+          <div class="email__details">
+            <h4 class="details__title">
+              Email
+            </h4>
+            <p class="details__text">
+              <p><a href="#">free@psdfreebies.com</a></p>
+            </p>
+          </div>
+        </div>
+        <div class="adress__phone">
+            <div class="phone__icon"></div>
+            <div class="phone__details">
+              <h4 class="details__title">
+                  Call Us!
+                </h4>
+              <p class="details__text">
+                <p><a href="#">+123 456 7890</a></p>
+                <p><a href="#">+123 456 7890</a></p>
+              </p>
+            </div>
+        </div>
+        <div class="adress__street">
+            <div class="street__icon"></div>
+            <div class="street__details">
+              <h4 class="details__title">
+                  Adress
+                </h4>
+              <p class="details__text">
+                  <i>123, Main Road, New City,
+                  My Country 123456</i>
+              </p>
+            </div>
+        </div>
+      </div>
+      <div class="contact__form">
+        <h3 class="form__title">Get in Touch</h3>
+        <form class="form__fields" action="" method="POST">
+          <div class="fields--container">
+            <label class="fields__label" for="name">Name:</label>
+            <input class="fields__input" type="text" name="name">
+          </div>
+          <div class="fields--container">
+            <label class="fields__label" for="email">Email:</label>
+            <input class="fields__input" type="text" name="email">
+          </div>
+          <div class="fields--container">
+            <label class="fields__label" for="phone">Phone:</label>
+            <input class="fields__input" type="text" name="phone">
+          </div>
+          <div class="fields--container">
+            <label class="fields__label" for="message">Message:</label>
+            <textarea class="fields__input" name="message" cols="30" rows="5"></textarea>
+          </div>
+          <div class="fields--container">
+            <button class="fields__button" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="contact__footer">
+        <ul class="footer__socials">
+          <li class="socials__icon">
+            <i class="icon-facebook"></i>
+          </li>
+          <li class="socials__icon">
+            <i class="icon-gplus"></i>
+          </li>
+          <li class="socials__icon">
+            <i class="icon-vkontakte"></i>
+          </li>
+          <li class="socials__icon">
+            <i class="icon-youtube"></i>
+          </li>
+          <li class="socials__icon">
+            <i class="icon-linkedin"></i>
+          </li>
+          <li class="socials__icon">
+            <i class="icon-digg"></i>
+          </li>
+          <li class="socials__icon">
+            <i class="icon-deviantart"></i>
+          </li>
+        </ul>
+        <div class="footer__copyright">
+          <p class="copyright__author">
+            Designed By <a href="https://psdfreebies.com/" target="blank">PSDFreebies.com</a>
+          </p>
+          <p class="copyright__info">
+            COPYRIGHT 2017
+          </p>
+        </div>
+      </div>
+    </div>  
+  </footer>
 
   <script src="glightbox.min.js"></script>
   <script src="home.bundle.js"></script>

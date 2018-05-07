@@ -1,0 +1,192 @@
+.root__contact {
+    color: $secondary-color;
+    background-image: url('../images/contact_bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    .box--row {
+        flex-wrap: wrap;
+    }
+}
+
+.contact__adress {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    a {
+        @extend %anchor-basic;
+        &:hover {
+            @include hover(font-main-darken);
+        }
+    }
+}
+
+.contact__form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+
+.contact__footer {
+    @extend %flex-column;
+    width: 100%;
+    padding: 0 8rem;
+}
+
+.footer__socials {
+    @extend %flex-between-center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 5rem;
+}
+
+.footer__copyright {
+    @extend %flex-column;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+}
+
+.adress__greeting {
+    @extend %font-greeting;
+}
+
+.adress__title {
+    @extend %font-title;
+    padding: 1rem 0;
+}
+
+.adress__email, .adress__phone, .adress__street {
+    display: flex;
+    align-items: center; 
+    padding: 2rem 0;
+}
+
+.email__icon {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/contact_letter.png');
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+}
+
+.phone__icon {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/contact_phone.png');
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+}
+
+.street__icon {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/contact_pointer.png');
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+}
+
+.email__details, .phone__details, .street__details {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+
+.form__title {
+    @extend %font-title;
+    padding-bottom: 2rem;
+}
+
+.form__fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.fields__label {
+    padding-right: 3rem;
+}
+
+.fields__input {
+    width: 300px;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgba(50, 50, 50, 1);
+    padding: 0.5rem 1rem;
+    &:hover {
+        @include hover(bg-gray-lighten);
+    }
+}
+
+.fields__button {
+    @include button($calltoaction-color);
+    margin-left: 7.25rem;
+    &:hover {
+        @include hover(bg-call-darken);
+    }
+}
+
+.copyright__author {
+    a {
+        @extend %anchor-basic;
+        &:hover {
+            @include hover(font-main-darken);
+        }
+    }
+}
+
+.socials__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 4px solid $secondary-color;
+    border-radius: 50%;
+    padding: 2rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    &:hover {
+        @include hover(border-elipse);
+    }
+    i {
+        font-size: 1.5rem;
+        &:hover {
+            @include hover(font-main-darken);
+        }
+    }
+}
+
+@media (max-width: 1115px) {
+    .root__contact {
+        .box--row {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .footer__socials {
+        width: 250px;
+    }   
+}    
+
+@media (max-width: 470px){
+    .fields--container {
+        flex-direction: column;
+    }
+    .fields__input {
+        width: 250px;
+    }    
+    .fields__button {
+        margin: 0;
+    }  
+    .footer__copyright {
+        text-align: center;
+    }       
+}
