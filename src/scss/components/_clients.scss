@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
+    background-size: cover;
 }
 
 .clients__greeting {
@@ -57,3 +58,9 @@
 .brands__item4 {
     background-image: url('../images/clients_brand4.png');
 }
+
+@media (max-width: 730px) {
+    .root__clients{
+        background-attachment: scroll;
+    }
+}    

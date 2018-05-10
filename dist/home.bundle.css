@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-.box--row, .root__navbar, .navbar__menu, .services__offer, .competence__skill, .footer__socials {
+.box--row, .root__navbar, .navbar__menu, .services__offer, .footer__socials {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -22,7 +22,7 @@
       align-items: center; }
 
 .root__navbar a, .contact__adress a, .copyright__author a {
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   text-decoration: none; }
 
 .navbar__logo, .welcome__title, .overall__title, .services__title, .profile__title, .clients__title, .post__title, .adress__title, .form__title {
@@ -94,7 +94,7 @@
 
 @keyframes font-main-darken {
   0% {
-    color: rgba(255, 255, 255, 0.9); }
+    color: white; }
   100% {
     color: #0081ff; } }
 
@@ -150,11 +150,11 @@
   0% {
     background-color: #323232; }
   100% {
-    background-color: rgba(255, 255, 255, 0.9); } }
+    background-color: white; } }
 
 .root {
   font-family: 'Lato', sans-serif;
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
   line-height: 1.5; }
 
 button:focus {
@@ -162,6 +162,7 @@ button:focus {
 
 .root__navbar {
   width: 100%;
+  height: 75px;
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
   z-index: 100; }
@@ -173,11 +174,34 @@ button:focus {
 .navbar__menu {
   list-style-type: none; }
 
+.navbar__hamburger {
+  display: none;
+  cursor: pointer; }
+  .navbar__hamburger:hover .hamburger__line {
+    animation: bg-main-lighten 0.5s;
+    animation-fill-mode: forwards; }
+
+.hamburger__line {
+  width: 40px;
+  height: 6px;
+  background-color: #0081ff; }
+  .hamburger__line:nth-child(2) {
+    margin: 8px 0; }
+
+.navbar__hamburger-closed .hamburger__line {
+  width: 40px;
+  height: 6px;
+  background-color: #0081ff; }
+  .navbar__hamburger-closed .hamburger__line:nth-child(1) {
+    transform: translateY(15px) rotate(45deg); }
+  .navbar__hamburger-closed .hamburger__line:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg); }
+
 .menu__item {
   font-size: 0.75rem;
   font-weight: 900;
   text-transform: uppercase;
-  line-height: 8;
+  line-height: 5;
   border-top: 6px solid transparent;
   margin: 0 1rem; }
   .menu__item a:hover {
@@ -191,18 +215,39 @@ button:focus {
   animation-timing-function: linear; }
 
 @media (max-width: 1115px) {
+  .navbar__menu {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 2rem; }
+  .navbar__hamburger {
+    display: block; }
   .menu__item {
-    display: none; } }
+    font-size: 1rem;
+    margin: 1rem 0;
+    line-height: 2; } }
 
 .root__header {
   background-image: url(images/header_bg.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center; }
+  background-position: center;
+  background-size: cover; }
 
 .header__welcome {
   width: 50%;
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   margin-top: 14rem;
   margin-bottom: 6rem;
   position: relative;
@@ -234,7 +279,7 @@ button:focus {
   width: 180px;
   font-size: 1rem;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   background-color: #00aeed;
   border: 0;
   border-radius: 1.5rem;
@@ -251,6 +296,8 @@ button:focus {
     height: 600px; } }
 
 @media (max-width: 730px) {
+  .root__header {
+    background-attachment: scroll; }
   .header__welcome {
     width: 100%;
     margin-top: 8rem;
@@ -263,7 +310,7 @@ button:focus {
 
 .root__about {
   background-color: #0081ff;
-  color: rgba(255, 255, 255, 0.9); }
+  color: white; }
 
 .about__overall, .about__precise {
   width: 45%;
@@ -278,7 +325,7 @@ button:focus {
   width: 180px;
   font-size: 1rem;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   background-color: #3b4374;
   border: 0;
   border-radius: 1.5rem;
@@ -300,7 +347,7 @@ button:focus {
 
 .root__services {
   background-color: #0079f0;
-  color: rgba(255, 255, 255, 0.9); }
+  color: white; }
 
 .services__greeting {
   margin-top: 6rem; }
@@ -313,6 +360,12 @@ button:focus {
 
 .offer__competence {
   width: 30%; }
+
+.competence__skill {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .competence__text {
   margin-top: 1rem; }
@@ -338,7 +391,7 @@ button:focus {
         justify-content: center; } }
 
 .root__profile {
-  background-color: rgba(255, 255, 255, 0.9); }
+  background-color: white; }
 
 .profile__greeting {
   color: #323232;
@@ -405,11 +458,12 @@ button:focus {
     grid-template-areas: 'item1 item1 item1 item1' 'item1 item1 item1 item1' 'item2 item2 item3 item3' 'item2 item2 item3 item3' 'item4 item4 item5 item5' 'item4 item4 item5 item5' 'item4 item4 item6 item6' 'item4 item4 item6 item6'; } }
 
 .root__clients {
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   background-image: url(images/clients_bg.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center; }
+  background-position: center;
+  background-size: cover; }
 
 .clients__greeting {
   margin-top: 6rem; }
@@ -453,8 +507,12 @@ button:focus {
 .brands__item4 {
   background-image: url(images/clients_brand4.png); }
 
+@media (max-width: 730px) {
+  .root__clients {
+    background-attachment: scroll; } }
+
 .root__blog {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: white;
   margin-top: 6rem;
   margin-bottom: 6rem; }
 
@@ -486,7 +544,7 @@ button:focus {
 
 .posts__post2 {
   grid-area: item2;
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   background-color: #0081ff;
   margin-left: 0; }
   .posts__post2:hover {
@@ -504,7 +562,7 @@ button:focus {
 
 .posts__post4 {
   grid-area: item4;
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   background-color: black;
   margin-left: 0; }
   .posts__post4:hover {
@@ -513,7 +571,7 @@ button:focus {
 
 .posts__post5 {
   grid-area: item5;
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   background-image: url(images/blog_post5.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -535,7 +593,7 @@ button:focus {
 
 .posts__post6 {
   grid-area: item6;
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   background-color: #e91d62;
   margin-right: 0; }
   .posts__post6:hover {
@@ -579,11 +637,12 @@ button:focus {
     padding: 1rem; } }
 
 .root__contact {
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   background-image: url(images/contact_bg.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center; }
+  background-position: center;
+  background-size: cover; }
   .root__contact .box--row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
@@ -690,7 +749,7 @@ button:focus {
   width: 180px;
   font-size: 1rem;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   background-color: #00aeed;
   border: 0;
   border-radius: 1.5rem;
@@ -714,7 +773,7 @@ button:focus {
       align-items: center;
   width: 50px;
   height: 50px;
-  border: 4px solid rgba(255, 255, 255, 0.9);
+  border: 4px solid white;
   border-radius: 50%;
   padding: 2rem;
   margin: 0 1rem;
@@ -732,6 +791,10 @@ button:focus {
   .root__contact .box--row {
     -ms-flex-pack: center;
         justify-content: center; } }
+
+@media (max-width: 730px) {
+  .root__contact {
+    background-attachment: scroll; } }
 
 @media (max-width: 680px) {
   .footer__socials {

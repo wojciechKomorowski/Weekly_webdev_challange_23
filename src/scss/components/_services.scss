@@ -25,7 +25,8 @@
 }
 
 .competence__skill {
-    @extend %flex-between-center;
+    display: flex;
+    justify-content: center;
 }
 
 .competence__text {

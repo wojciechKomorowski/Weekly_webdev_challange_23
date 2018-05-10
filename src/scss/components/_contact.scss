@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
+    background-size: cover;
     .box--row {
         flex-wrap: wrap;
     }
@@ -169,6 +170,12 @@
         }
     }
 }
+
+@media (max-width: 730px) {
+    .root__contact {
+        background-attachment: scroll;
+    }
+}        
 
 @media (max-width: 680px) {
     .footer__socials {

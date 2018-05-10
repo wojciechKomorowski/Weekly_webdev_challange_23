@@ -12,7 +12,7 @@
 <body class="root">
 
   <nav class="box--row root__navbar">
-    <a class="navbar__logo" href="#"><span class="color--main">!st</span> Agency</a>
+    <a class="navbar__logo" href="#"><span class="color--main">!st</span>Agency</a>
     <ul class="navbar__menu">
       <li class="menu__item menu__item--active"><a href="#home">Home</a></li>
       <li class="menu__item"><a href="#aboutus">About Us</a></li>
@@ -22,13 +22,18 @@
       <li class="menu__item"><a href="#blog">Blog</a></li>
       <li class="menu__item"><a href="#contact">Contact</a></li>
     </ul>
+    <div class="navbar__hamburger">
+      <div class="hamburger__line"></div>
+      <div class="hamburger__line"></div>
+      <div class="hamburger__line"></div>
+    </div>
   </nav>
 
   <header class="root__header" id="home">
     <div class="box--row background--darken">
       <article class="header__welcome">
         <p class="welcome__greeting">Hello</p>
-        <h1 class="welcome__title">My Name is <span class="color--main">John Doe</span></h1>
+        <h1 class="welcome__title">My Name is<span class="color--main">John Doe</span></h1>
         <h2 class="welcome__position">Ceo | !st Agency</h2>
         <p class="welcome__text">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aut perspiciatis in non impedit nobis recusandae quisquam eum excepturi ea voluptates mollitia magni odio deserunt aspernatur voluptatem enim, consequatur ut. Veritatis neque, qui, facere, repellendus nostrum in tempora molestiae voluptates pariatur provident officia magnam! Dolore ipsam ab sequi et. Rerum, ad eveniet.
@@ -230,19 +235,19 @@
         <form class="form__fields" action="" method="POST">
           <div class="fields--container">
             <label class="fields__label" for="name">Name:</label>
-            <input class="fields__input" type="text" name="name">
+            <input class="fields__input" type="text" name="name" required>
           </div>
           <div class="fields--container">
             <label class="fields__label" for="email">Email:</label>
-            <input class="fields__input" type="text" name="email">
+            <input class="fields__input" type="text" name="email" required>
           </div>
           <div class="fields--container">
             <label class="fields__label" for="phone">Phone:</label>
-            <input class="fields__input" type="text" name="phone">
+            <input class="fields__input" type="text" name="phone" required>
           </div>
           <div class="fields--container">
             <label class="fields__label" for="message">Message:</label>
-            <textarea class="fields__input" name="message" cols="30" rows="5"></textarea>
+            <textarea class="fields__input" name="message" cols="30" rows="5" required></textarea>
           </div>
           <div class="fields--container">
             <button class="fields__button" type="submit">Submit</button>
